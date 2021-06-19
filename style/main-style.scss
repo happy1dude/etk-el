@@ -63,9 +63,11 @@ body {
                 color: #fff;
                 display: flex;
                 align-items: center;
-                font-size: 18px;
+                font-size: 10px;
                 font-weight: 600;
                 cursor: pointer;
+                font-family: $font-title;
+
            }
         }
 
@@ -87,6 +89,7 @@ body {
                     
     
                     li {
+                        font-family: $font-title;
                         list-style-type: none;
                         font-size: 23px;
                         font-weight: 600;
@@ -189,6 +192,11 @@ body {
 }
 
 // === / mobile menu ===
+@media (max-width: 1250px) {
+    .header_wrapper__inner__main-menu ul a li {
+        font-size: 18px;
+    }
+}
 
 @media (max-width: 1100px) {
     .header_wrapper__inner {
@@ -205,7 +213,7 @@ body {
     }
 
     .header_wrapper__inner ul a li {
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .mobile-menu__wrapper {
@@ -236,6 +244,10 @@ body {
     .header_wrapper__inner__mobile-menu {
         position: absolute;
         left: 10px;
+    }
+
+    .header_wrapper__inner__mobile-menu__title {
+        font-size: 13px;
     }
 }
 // === / header ===
@@ -338,6 +350,13 @@ body {
                 margin: 0;
                 text-align: center;
                 font-family: $font-title;
+            }
+
+            ul {
+
+                li:not(:last-child) {
+                    margin-bottom: 10px;
+                }
             }
         }
     }
@@ -497,6 +516,161 @@ body {
 // === / runing line ===
 
 
+// === services ===
+.services-wrapper {
+    background-color: #000;
+
+    &__inner {
+        max-width: 1250px;
+        margin: 0 auto;
+        height: 100%;
+        padding: 0 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &__title {
+           text-align: center;
+           
+           h2 {
+               color: #fff;
+               font-family: $font-title;
+                text-align: center;
+                padding-top: 50px;
+                margin: 0;
+           }
+        }
+
+        &__text {
+            display: flex;
+            justify-content: center;
+
+            ul {
+                color: #fff;
+
+
+                li:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+// === / services ===
+
+
+// === footer ===
+.footer-wrapper {
+    width: 100%;
+    background-color: $main-color;
+
+    &__inner {
+        max-width: 1250px;
+        margin: 0 auto;
+        height: 100%;
+        padding: 0 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+
+            h2 {
+
+                color: #fff;
+                font-family: $font-title;
+                text-align: center;
+                padding-top: 50px;
+                margin: 0;           
+            }
+        }
+
+        &__text {
+            margin-bottom: 50px;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        &__left-side {
+            color:  $color-text;
+            width: 49%;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 700;
+
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+
+        &__right-side {
+            color:  $color-text;
+            width: 49%;
+            border: 1px rgba(255, 255, 255, 0.5);
+            border-left-style: solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__wh-box {
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: 10px;
+                    width: 30px;
+
+                    &:hover {
+                        width: 35px;
+                    }
+                }
+
+                p {
+                    color:  $color-text;
+                }
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: 700;
+
+                    &:hover {
+                        color: $hover-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer-wrapper__inner__text {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-wrapper__inner__right-side {
+        border: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-wrapper__inner__left-side {
+        width: 100%;
+        text-align: center;
+    }
+}
+// === / footer ===
 
 
 // === / styles document ===
