@@ -250,6 +250,68 @@ body {
         font-size: 13px;
     }
 }
+
+@media (max-width: 370px) {
+    .header_wrapper__inner__mobile-menu__title {
+        font-size: 10px;
+    }
+
+    .info-box__title {
+        height: 200px !important;
+    }
+
+    .info-box__title h2 {
+        font-size: 18px;
+    }
+
+    .header_wrapper__inner__mobile-menu img {
+        width: 25px !important;
+    }
+
+    .header_wrapper__inner img {
+        width: 120px;
+    }
+
+    .header_wrapper__inner__mobile-menu img:nth-child(2) {
+        width: 15px !important;
+    }
+
+    .destinations_wrapper__inner__title-two h2 {
+        font-size: 15px;
+    }
+
+    .destinations_wrapper__inner__title-one h2 {
+        font-size: 15px;
+    }
+
+    .products_wrapper h1 {
+        font-size: 15px;
+    }
+
+    .services-wrapper__inner__title h2 {
+        font-size: 15px;
+    }
+
+    .footer-wrapper__inner__title h2 {
+        font-size: 15px;
+    }
+
+
+}
+
+@media (max-width: 330px) {
+    .header_wrapper__inner img {
+        width: 80px;
+    }
+
+    .about-us_wrapper__inner__title span {
+        font-size: 60px;
+    }
+
+    .about-us_wrapper__inner__title h1 {
+        text-align: center;
+    }
+}
 // === / header ===
 
 // === about us ===
